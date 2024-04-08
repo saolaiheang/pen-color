@@ -28,10 +28,10 @@ async function getPen() {
 
 
 // 3. Local Storage : Save data to localStorage
-function saveLocalStorageData(pen) {
+function saveLocalStorageData(pens) {
 
     // Please implement saving local storage function
-    localStorage.setItem('pen', JSON.stringify(pen));
+    localStorage.setItem('pen', JSON.stringify(pens));
 }
 
 function createPenElement(pen) {
