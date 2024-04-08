@@ -32,11 +32,6 @@ function saveLocalStorageData(pen) {
 
     // Please implement saving local storage function
     localStorage.setItem('pen', JSON.stringify(pen));
-  
-
-
-
-  // Please implement saving local storage function
 }
 
 function createPenElement(pen) {
