@@ -1,6 +1,13 @@
 // 2. URL Parameter: please get id from URL
-let id = 1;
-let url = ""; // please use a url from single pen from API document
+
+let params = new URLSearchParams(document.location.search);
+let id = params.get("id");
+
+let url = "https://pens-api.vercel.app/api/pens/"+id;
+
+
+
+ // please use a url from single pen from API document
 
 async function getPen() {
   // Fetch pen colors from API
@@ -19,8 +26,16 @@ async function getPen() {
   }
 }
 
+
 // 3. Local Storage : Save data to localStorage
 function saveLocalStorageData(pen) {
+
+    // Please implement saving local storage function
+    localStorage.setItem('pen', JSON.stringify(pen));
+  
+
+
+
   // Please implement saving local storage function
 }
 
